@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ігрова колекція: Спеціальна версія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styels.css">
+</head>
+<body>
+    <header> 
+        <div class="logo">🎮 GameWorld</div>
+        <nav>
+            <ul>
+                <li><a href="#home">ГОЛОВНА</a></li>
+                <li><a href="#content">ІГРИ</a></li>
+                <li><a href="#contact">КОНТАКТИ</a></li>
+            </ul>
+        </nav>
+        <div class="accessibility-controls">
+            <button id="theme-toggle" type="button">Контрастний режим</button>
+            <button id="font-toggle" type="button">Збільшити текст</button>
+            <button id="large-fixed-toggle" type="button">Фіксований великий текст</button>
+        </div>
+    </header>
+
+    <main id="home"> 
+        <section class="intro">
+            <h2>Огляд цікавих ігор</h2>
+            <p>Цей сайт створено спеціально зручним для кожного гравця, зокрема для людей з вадами зору.</p>
+        </section>
+
+                        <!-- інф -->
+        <div id="content" class="games-container">
+            <article class="game-card">
+                <h3>Barotrauma</h3>
+                <p>Кооперативний симулятор підводного човна у суворому океані супутника Юпітера. Боріться з монстрами та виправляйте пробоїни.</p>
+            </article>
+
+            <article class="game-card">
+                <h3>Don't Starve Together</h3>
+                <p>Незвична та атмосферна гра про виживання у дикому, похмурому та повному таємниць світі.</p>
+            </article>
+
+            <article class="game-card">
+                <h3>Warhammer 40,000: Gladius - Relics of War</h3>
+                <p>Покрокова стратегія у всесвіті Warhammer 40k, де різні фракції ведуть нещадну боротьбу за контроль над планетою.</p>
+            </article>
+
+            <article class="game-card">
+                <h3>Deep Rock Galactic</h3>
+                <p>Командний шутер про космічних гномів-шахтарів, які досліджують небезпечні печерні системи планети Хоксес.</p>
+            </article>
+
+            <article class="game-card">
+                <h3>Factorio</h3>
+                <p>Гра про будівництво та автоматизацію фабрик на чужій планеті. Видобувайте ресурси та захищайтеся від місцевих істот.</p>
+            </article>
+        </div>
+
+                <!-- форм зв -->
+        <section id="contact" class="contact-section">
+            <h3>Зворотний зв'язок</h3>
+            <form id="feedback-form">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" placeholder="Введіть ім'я" required>
+                
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" placeholder="Ваш відгук або питання" required></textarea>
+                
+                <button type="submit">Надіслати</button>
+            </form>
+
+            <div id="success-message">Дякуємо! Ваш відгук успішно відправлено.</div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#home">ГОЛОВНА</a></li>
+                <li><a href="#content">ІГРИ</a></li>
+                <li><a href="#contact">КОНТАКТИ</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Ігровий проєкт. Усі права захищені.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
